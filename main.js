@@ -101,11 +101,11 @@ const createHandLandmarker = async () => {
     "https://raw.githubusercontent.com/Mustafa-Esmaail/arabic-sign-language/sign-lang-model-v1/model.json"
   );
   NumhandModel = await tf.loadLayersModel(
-    "https://raw.githubusercontent.com/Mustafa-Esmaail/arabic-sign-language/sign-lang-model-v1/tfjs_num/NUMmodel.json"
+    "https://raw.githubusercontent.com/Mustafa-Esmaail/arabic-sign-language/sign-lang-model-v1/tfjs_num/model.json"
   );
 
    poseModel = await tf.loadLayersModel(
-    "https://raw.githubusercontent.com/Mustafa-Esmaail/arabic-sign-language/sign-lang-model-v1/tfjs_num/model.json"
+    "https://raw.githubusercontent.com/Mustafa-Esmaail/arabic-sign-language/sign-lang-model-v1/tfjs_model/Lmodel.json"
   );
  
 };
