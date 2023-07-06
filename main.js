@@ -105,7 +105,7 @@ const createHandLandmarker = async () => {
   );
 
    poseModel = await tf.loadLayersModel(
-    "https://raw.githubusercontent.com/Mustafa-Esmaail/arabic-sign-language/sign-lang-model-v1/tfjs_model/Lmodel.json"
+    "https://raw.githubusercontent.com/Mustafa-Esmaail/arabic-sign-language/sign-lang-model-v1/tfjs_num/model.json"
   );
  
 };
