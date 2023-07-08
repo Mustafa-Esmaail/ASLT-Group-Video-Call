@@ -58,6 +58,9 @@ button{
 .canvas {
     z-index: 999;
     position: absolute;
+transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg)
    
 }
 .cam-result {
