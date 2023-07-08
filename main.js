@@ -1,3 +1,8 @@
+
+const APP_ID = "7431e3d68f8840a5a64e518def368477"
+const TOKEN = "007eJxTYNjVLGj12l2eY+J5qfRbekKR9ppd5qUXV7xtzd35a+LJKSwKDOYmxoapxilmFmkWFiYGiaaJZiappoYWKalpxmYWJubm3XdXpjQEMjLMPtDPysjAyMACxCA+E5hkBpMsYJKdIbe0uCQxLZGBAQCfyCLg"
+const CHANNEL = "mustafa"
+let userID='';
 import {
   PoseLandmarker,
   FilesetResolver ,
@@ -97,11 +102,9 @@ const createHandLandmarker = async () => {
     "https://raw.githubusercontent.com/Mustafa-Esmaail/arabic-sign-language/sign-lang-model-v1/model.json"
   );
  
-  handModel = await tf.loadLayersModel(
-    "https://raw.githubusercontent.com/Mustafa-Esmaail/arabic-sign-language/sign-lang-model-v1/model.json"
-  );
+  
   NumhandModel = await tf.loadLayersModel(
-    "https://raw.githubusercontent.com/Mustafa-Esmaail/arabic-sign-language/sign-lang-model-v1/tfjs_num/model.json"
+    "https://raw.githubusercontent.com/Mustafa-Esmaail/arabic-sign-language/sign-lang-model-v1/tfjs_num/model.json  "
   );
 
    poseModel = await tf.loadLayersModel(
@@ -421,10 +424,9 @@ const predict =async ()=>{
   setTimeout(() => {
     if(enableprediction==true){
         predict();
-        // console.log(counter)
 
     }
-  }, 0);
+  },1);
  }
  else{
   setTimeout(() => {
@@ -433,7 +435,7 @@ const predict =async ()=>{
         // console.log(counter)
 
     }
-  }, 700);
+  }, 1000);
  }
   // let startTimeMs = performance.now();
   // const results = handLandmarker.detectForVideo(video, startTimeMs);
@@ -443,10 +445,6 @@ const predict =async ()=>{
 
 
 
-const APP_ID = "7431e3d68f8840a5a64e518def368477"
-const TOKEN = "007eJxTYJi0PmdL6IlL+zZdOb7AKUhC8fxn6cf9361vS9n9TczMfFejwGBuYmyYapxiZpFmYWFikGiaaGaSampokZKaZmxmYWJu3iW9LKUhkJHBJrSFmZGBkYEFiEF8JjDJDCZZwCQ7Q25pcUliWiIDAwDCkCSJ"
-const CHANNEL = "mustafa"
-let userID='';
 const client = AgoraRTC.createClient({mode:'rtc', codec:'vp8'})
 
 let localTracks = []
